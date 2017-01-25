@@ -72,7 +72,12 @@ img{
 
 }
 body{
-  background-color: #007FFF;
+
+  background-image: url('img/smartphone-1445489_960_720.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
 }
 div.slide{
 
@@ -340,10 +345,15 @@ border-color: #007FFF;
     clear: both;
     }
     #download {
-  	    float:left;
+  	    text-align: center;
   	    cursor:pointer;
   	    color:#ccc;
   	    padding:3px;
+        margin: auto;
+        display: block;
+        position: relative;
+        font-size: 28px;
+        font-weight: bolder;
   	}
   	#download:hover {
   	    color:#fff;

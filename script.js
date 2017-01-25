@@ -18,7 +18,7 @@ function downloadCanvas(link, canvasId, filename) {
  * parameter (=the link element), ID of the canvas and a filename.
 */
 document.getElementById('download').addEventListener('click', function() {
-    downloadCanvas(this, 'canvas', 'test.png');
+    downloadCanvas(this, 'canvas', 'GoFilterYourSelf.png');
 }, false);
 
 // Get access to the camera!

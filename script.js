@@ -2,10 +2,15 @@ var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 var video = document.getElementById('video');
 
+
 // Trigger photo take
 document.getElementById("snap").addEventListener("click", function() {
 	context.drawImage(video, 0, 0, 640, 480);
 });
+
+var dataURL = canvas.toDataURL();
+
+document.getElementById('canvasImg').src = dataURL;
 
 // Get access to the camera!
 if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {

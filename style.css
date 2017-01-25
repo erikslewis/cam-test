@@ -339,3 +339,12 @@ border-color: #007FFF;
     display: table;
     clear: both;
     }
+    #download {
+  	    float:left;
+  	    cursor:pointer;
+  	    color:#ccc;
+  	    padding:3px;
+  	}
+  	#download:hover {
+  	    color:#fff;
+  	}

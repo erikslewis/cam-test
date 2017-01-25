@@ -1,4 +1,7 @@
-#video{
+video{
+  border-width: thick;
+  border-color: black;
+border-style: double;
 
 }
 button{
@@ -8,4 +11,10 @@ button{
   background-color: red;
   border-width: thick;
   border-color: silver;
+}
+canvas{
+  border-width: thick;
+  border-color: black;
+border-style: double;
+
 }

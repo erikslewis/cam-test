@@ -2,6 +2,7 @@
 <head>
   <meta charset="utf-8">
   <title>Live Camera</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
           <li><a href="about.asp">About</a></li>
         </ul>
       </div>
-        <span style="color:rgb(64, 64, 64);background-color:yellow;font-size:45px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span>
+        <span style="background-color:yellow;font-size:45px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span><br>
 
           <video id="video" width="640" height="480" autoplay></video>
           <button id="snap">Take Photo</button>
@@ -187,6 +188,295 @@
         </div>
         <!-- #endregion Jssor Slider End -->
       </div>
+
+
+<h2>Filter Image Gallery</h2>
+
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/generalassembly1.jpg"  width="600" height="400">
+
+    <div class="desc">No Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA alien.jpg"  width="300" height="200">
+
+    <div class="desc">Alien_Goggles Filter</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA aqua.jpg"  width="600" height="400">
+
+    <div class="desc">Aqua Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA darksoul.jpg"  width="600" height="400">
+
+    <div class="desc">Dark_Soul Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA granite.jpg"  width="600" height="400">
+
+    <div class="desc">Blue_Granite Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA clean view.jpg"  width="600" height="400">
+
+    <div class="desc">Clean_View Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA creativity.jpg"  width="600" height="400">
+
+    <div class="desc">Creativity Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA FARAWAY.jpg"  width="600" height="400">
+
+    <div class="desc">Far_Away Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA Neo.jpg" width="600" height="400">
+
+    <div class="desc">Neo_Instinct Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA dry skin.jpg" width="600" height="400">
+
+    <div class="desc">Dry_Skin Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA Gred.jpg" width="600" height="400">
+
+    <div class="desc">Gred_Mash Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA plentiful.jpg"  width="600" height="400">
+
+    <div class="desc">Plentiful Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA rain.jpg"  width="600" height="400">
+
+    <div class="desc">Dark_Rain Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA rainbow.jpg"  width="600" height="400">
+
+    <div class="desc">Rainbow_Festival Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA SAnd_paper.jpg"  width="600" height="400">
+
+    <div class="desc">Sand_Paper Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA SUNDAY.jpg"  width="600" height="400">
+
+    <div class="desc">Sunday Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/elon_space_pizza.jpg" width="600" height="400">
+
+    <div class="desc">Space_Pizza Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/Dream.jpg"  width="600" height="400">
+
+    <div class="desc">Colorful_Dream Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/really_hot.jpg"  width="600" height="400">
+
+    <div class="desc">Really_Hot Filter</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+
+      <img src="img/GA puroke storm.jpg"  width="600" height="400">
+
+    <div class="desc">Purple_Storm Filter</div>
+  </div>
+</div>
+<body>
+
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="img/generalassembly1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/Dream.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/GA rainbow.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="img/GA puroke storm.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/generalassembly1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img/Dream.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img/GA rainbow.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img/GA puroke storm.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img/generalassembly1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/Dream.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/GA rainbow.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/GA puroke storm.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 
 
 

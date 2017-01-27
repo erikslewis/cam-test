@@ -9,27 +9,31 @@
 
 
 
-  <div class="animated zoomIn" style="padding:0px; margin:0px; background-color:;font-family:'Open Sans',sans-serif,arial,helvetica,verdana">
-      <body ng-controller="GrumbleCtrl as main">
+  <div class="animated zoomIn" >
+    <body ng-app="goFilter" ng-controller="MainCtrl">
         <img class="animated zoomIn" id="title" src="img/title5.jpg" alt="" />
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
 
         <ul class="animated zoomIn" >
-          <li><a href="" ng-click="getGrumbles()"> Special Filters</a></li>
+          <li><a href="index3.html">Special Filter Gallery</a></li>
           <li><a href="about.asp">About</a></li>
-          <li><a href="" ng-click="getGrumbles()">Other Page</a></li>
-          <li><a href="" ng-click="getGrumbles()">Go-Filter Image Editor</a></li>
+          <li><a href="index2.html">Go-Filter Image Editor</a></li>
+          <li><a href="index.html">Go-Filter Camera</a></li>
 
         </ul>
       </div>
-        <span style="background-color:lightblue;border-radius:2px;border-color:yellow;border-style:double;border-width:thick;font-size:45px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span><br>
+      <div class="own">
+          <span style="background-color:black;font-size:36px;color:silver;text-align:center;position:relative;border-style:double;border-color:yellow;margin-top:10px;display:block;margin-bottom:5px;margin:0auto;"onclick="openNav()">&#9776; Menu</span><br>
+      </div>
+
 
           <video id="video" width="640" height="480" autoplay></video>
           <button id="snap">Take Photo</button>
           <canvas id="canvas" width="640" height="480"></canvas>
-<a id="download">Download Your Picture</a><br>
+<a id="download"> Download Your Picture &#x25bc;</a><br>
+
           <script src="script.js"></script>
         <!-- #region Jssor Slider Begin -->
         <!-- Generator: Jssor Slider Maker -->
@@ -192,288 +196,6 @@
         </div>
         <!-- #endregion Jssor Slider End -->
       </div>
-
-
-<body>
-
-<h2 style="text-align:center">Lightbox</h2>
-
-<div class="row">
-  <div class="column">
-    <img src="img/generalassembly1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">No Filter
-  </div>
-  <div class="column">
-    <img src="img/Dream.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">Colorful_Dream Filter
-  </div>
-  <div class="column">
-    <img src="img/GA rainbow.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">Rainbow_Festival Filter
-  </div>
-  <div class="column">
-    <img src="img/GA puroke storm.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">Purple_Storm Filter
-  </div>
-  <div class="column">
-    <img src="img/GA SUNDAY.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Sunday Filter
-  </div>
-  <div class="column">
-    <img src="img/elon_space_pizza.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Space_Pizza Filter
-  </div>
-  <div class="column">
-    <img src="img/really_hot.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Really_Hot Filter
-  </div>
-  <div class="column">
-    <img src="img/GA SAnd_paper.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Sand_Paper Filter
-  </div>
-  <div class="column">
-    <img src="img/GA rain.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Dark_Rain Filter
-  </div>
-  <div class="column">
-    <img src="img/GA plentiful.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Plentiful Filter
-  </div>
-  <div class="column">
-    <img src="img/GA Gred.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Gred_Mash Filter
-  </div>
-  <div class="column">
-    <img src="img/GA dry skin.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Dry_Skin Filter
-  </div>
-  <div class="column">
-    <img src="img/GA Neo.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Neo_Instinct Filter
-  </div>
-  <div class="column">
-    <img src="img/GA FARAWAY.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Far_Away Filter
-  </div>
-  <div class="column">
-    <img src="img/GA creativity.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Creativity Filter
-  </div>
-  <div class="column">
-    <img src="img/GA clean view.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Clean_View Filter
-  </div>
-  <div class="column">
-    <img src="img/GA granite.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Blue_Granite Filter
-  </div>
-  <div class="column">
-    <img src="img/GA darksoul.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Dark_Soul Filter
-  </div>
-  <div class="column">
-    <img src="img/GA aqua.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Aqua Filter
-  </div>
-  <div class="column">
-    <img src="img/GA alien.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">Alien_Goggles Filter
-  </div>
-</div>
-
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 20</div>
-      <img src="img/generalassembly1.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 20</div>
-      <img src="img/Dream.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 20</div>
-      <img src="img/GA rainbow.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 20</div>
-      <img src="img/GA puroke storm.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">5/ 20</div>
-      <img src="img/GA SUNDAY.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">6 / 20</div>
-      <img src="img/elon_space_pizza.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">7 / 20</div>
-      <img src="img/really_hot.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">8 / 20</div>
-      <img src="img/GA SAnd_paper.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">9 / 20</div>
-      <img src="img/GA rain.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">10 / 20</div>
-      <img src="img/GA plentiful.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">11 / 20</div>
-      <img src="img/GA Gred.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">12 / 20</div>
-      <img src="img/GA dry skin.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">13 / 20</div>
-      <img src="img/GA Neo.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">14 / 20</div>
-      <img src="img/GA FARAWAY.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">15 / 20</div>
-      <img src="img/GA creativity.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">16 / 20</div>
-      <img src="img/GA clean view.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">17 / 20</div>
-      <img src="img/GA granite.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">18 / 20</div>
-      <img src="img/GA darksoul.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">19 / 20</div>
-      <img src="img/GA aqua.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">20 / 20</div>
-      <img src="img/GA alien.jpg" style="width:100%">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-
-    <div class="column">
-      <img class="demo cursor" src="img/generalassembly1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/Dream.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA rainbow.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA puroke storm.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA SUNDAY.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/elon_space_pizza.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/really_hot.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA SAnd_paper.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA rain.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA plentiful.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA Gred.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA dry skin.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA Neo.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA FARAWAY.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA creativity.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA clean view.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA granite.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA darksoul.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA aqua.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img/GA alien.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-  </div>
-</div>
-
-<script>
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
 
 
 
